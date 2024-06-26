@@ -7,27 +7,17 @@ actions:
     link: /开始使用.html
     type: primary
 
-  - text: 介绍
-    link: https://vuejs.press/guide/introduction.html
+  - text: 项目仓库
+    link: https://github.com/BubblingXuYijie/secure-api-spring-boot
     type: secondary
 
 features:
-  - title: Simplicity First
-    details: Minimal setup with markdown-centered project structure helps you focus on writing.
-  - title: Vue-Powered
-    details: Enjoy the dev experience of Vue, use Vue components in markdown, and develop custom themes with Vue.
-  - title: Performant
-    details: VuePress generates pre-rendered static HTML for each page, and runs as an SPA once a page is loaded.
-  - title: Themes
-    details: Providing a default theme out of the box. You can also choose a community theme or create your own one.
-  - title: Plugins
-    details: Flexible plugin API, allowing plugins to provide lots of plug-and-play features for your site.
-  - title: Bundlers
-    details: Default bundler is Vite, while Webpack is also supported. Choose the one you like!
+  - title: 高性能、轻量化
+    details: 采用JDK自带工具库实现，无任何外部依赖；正则和注解精细控制接口处理范围
+  - title: 场景启动器设计
+    details: 完美结合spring boot，支持2和3，完全自动化，配置灵活，支持yml和bean方式
+  - title: 多种加密算法
+    details: 支持AES、SM4、RSA等多种加密方式，支持DM前后端密钥协商方式
 
-footer: MIT Licensed | Copyright © 2018-present VuePress Community
+footer: Apache License 2.0
 ---
-
-这是中文主页. Check [Home Page Docs][default-theme-home] for more details.
-
-[default-theme-home]: https://vuejs.press/reference/default-theme/frontmatter.html#home-page
