@@ -25,7 +25,7 @@ export default defineUserConfig({
   },
 
   theme: defaultTheme({
-    logo: 'https://vuejs.press/images/hero.png',
+    logo: 'https://qiniuoss.xuyijie.icu/SecureApiDoc/img/logo/favicon.png',
     navbar: ['/', '/get-started'],
     docsRepo: 'https://github.com/BubblingXuYijie/secure-api-doc',
     locales: {

@@ -1,7 +1,7 @@
 ---
 home: true
 title: Home
-heroImage: https://vuejs.press/images/hero.png
+heroImage: https://qiniuoss.xuyijie.icu/SecureApiDoc/img/logo/favicon.png
 actions:
   - text: Get Started
     link: /en/get-started.html
