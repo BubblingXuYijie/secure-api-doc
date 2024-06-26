@@ -3,7 +3,7 @@ import { defineUserConfig } from 'vuepress/cli'
 import { viteBundler } from '@vuepress/bundler-vite'
 
 export default defineUserConfig({
-  head: [['link', { rel: 'icon', href: 'https://vuejs.press/images/hero.png' }]],
+  head: [['link', { rel: 'icon', href: 'https://qiniuoss.xuyijie.icu/SecureApiDoc/img/logo/favicon.png' }]],
   lang: 'zh-CN',
   title: 'SecureApi使用文档',
   description: '',
@@ -20,19 +20,19 @@ export default defineUserConfig({
     '/en/': {
       lang: 'en-US',
       title: 'SecureApi Document',
-      description: 'Vue-powered Static Site Generator',
+      description: 'A spring boot interface parameters and return value encryption and decryption tool',
     },
   },
 
   theme: defaultTheme({
-    logo: 'https://qiniuoss.xuyijie.icu/SecureApiDoc/img/logo/favicon.png',
+    logo: 'https://qiniuoss.xuyijie.icu/SecureApiDoc/img/logo/logo.png',
     navbar: ['/', '/get-started'],
     docsRepo: 'https://github.com/BubblingXuYijie/secure-api-doc',
     locales: {
       '/': {
         selectLanguageText: 'Language',
         selectLanguageName: '简体中文',
-        navbar: ['/', '/开始使用', '/更新历史'],
+        navbar: ['/', '/开始使用', '/版本历史'],
         sidebar: [
           {
             text: '开始使用',
@@ -41,17 +41,23 @@ export default defineUserConfig({
           },
           '安装',
           '配置',
-          '体验',
-          '注解介绍',
+          '试一下',
+          '注解',
+          'URL匹配',
+          '异常处理',
+          '加密算法',
+          'CipherUtils',
+          'DiffieHellman密钥协商',
+          '前后端配合流程',
         ],
       },
       '/en/': {
-        selectLanguageText: '选择语言',
+        selectLanguageText: '切换语言',
         selectLanguageName: 'English',
-        navbar: ['/en/', '/en/get-started'],
+        navbar: ['/en/', '/en/get-started', '/en/version-history'],
         sidebar: [
           {
-            text: 'start',
+            text: 'Start',
             prefix: '/en/',
             link: '/en/get-started.md',
             // children: [
@@ -63,9 +69,18 @@ export default defineUserConfig({
             // ],
           },
           {
-            text: 'install',
+            text: 'Install',
             link: '/en/install.md',
-          }
+          },
+          '/en/configuration.md',
+          '/en/try-it.md',
+          '/en/annotation.md',
+          '/en/url-pattern.md',
+          '/en/exception-handle.md',
+          '/en/encryption-algorithm',
+          '/en/CipherUtils',
+          '/en/diffie-hellman-key-agreement',
+          '/en/front-and-back-end-cooperation-process',
         ],
       },
     },

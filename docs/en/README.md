@@ -1,33 +1,23 @@
 ---
 home: true
 title: Home
-heroImage: https://qiniuoss.xuyijie.icu/SecureApiDoc/img/logo/favicon.png
+heroImage: https://qiniuoss.xuyijie.icu/SecureApiDoc/img/logo/logo.png
 actions:
   - text: Get Started
     link: /en/get-started.html
     type: primary
 
-  - text: Introduction
-    link: https://vuejs.press/guide/introduction.html
+  - text: Repository
+    link: https://github.com/BubblingXuYijie/secure-api-spring-boot
     type: secondary
 
 features:
-  - title: Simplicity First
-    details: Minimal setup with markdown-centered project structure helps you focus on writing.
-  - title: Vue-Powered
-    details: Enjoy the dev experience of Vue, use Vue components in markdown, and develop custom themes with Vue.
-  - title: Performant
-    details: VuePress generates pre-rendered static HTML for each page, and runs as an SPA once a page is loaded.
-  - title: Themes
-    details: Providing a default theme out of the box. You can also choose a community theme or create your own one.
-  - title: Plugins
-    details: Flexible plugin API, allowing plugins to provide lots of plug-and-play features for your site.
-  - title: Bundlers
-    details: Default bundler is Vite, while Webpack is also supported. Choose the one you like!
+  - title: High performance, lightweight
+    details: Adopt JDK's own tool library to achieve, without any external dependencies; regular and annotation fine control interface processing range.
+  - title: Scene Launcher Design
+    details: Perfect combination of spring boot, support for 2 and 3, fully automated, flexible configuration, support for yml and bean methods.
+  - title: Built-in multiple encryption algorithms
+    details: Support AES, SM4, RSA and other encryption methods, and support DM front-end and back-end key negotiation methods.
 
-footer: MIT Licensed | Copyright © 2018-present VuePress Community
+footer: Apache License 2.0
 ---
-
-This is the content of home page. Check [Home Page Docs][default-theme-home] for more details.
-
-[default-theme-home]: https://vuejs.press/reference/default-theme/frontmatter.html#home-page
