@@ -43,6 +43,7 @@ export default defineUserConfig({
     logo: 'https://qiniuoss.xuyijie.icu/SecureApiDoc/img/logo/logo.png',
     navbar: ['/', '/get-started'],
     docsRepo: 'https://github.com/BubblingXuYijie/secure-api-doc',
+    docsDir: 'docs',
     locales: {
       '/': {
         selectLanguageText: 'Language',
@@ -77,6 +78,9 @@ export default defineUserConfig({
           },
           '黑金刚',
         ],
+        editLinkText: '在 Github 上编辑',
+        lastUpdatedText: '最近更新',
+        contributorsText: '编著者',
       },
       '/en/': {
         selectLanguageText: '切换语言',
@@ -106,6 +110,7 @@ export default defineUserConfig({
           },
           '/en/black-king-kong',
         ],
+        editLinkText: 'Edit on GitHub',
       },
     },
     repo: 'https://github.com/BubblingXuYijie/secure-api-spring-boot',
