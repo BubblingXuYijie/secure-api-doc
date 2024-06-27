@@ -3,7 +3,7 @@ home: true
 title: 主页
 heroImage: https://qiniuoss.xuyijie.icu/SecureApiDoc/img/logo/logo.png
 actions:
-  - text: 开始使用
+  - text: 从这里开始
     link: /开始使用.html
     type: primary
 
