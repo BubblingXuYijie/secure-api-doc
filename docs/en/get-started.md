@@ -20,6 +20,10 @@ Although the use of HTTPS has basically guaranteed the security of transmission 
 
 Therefore, in view of the existence of this demand, the author also looked for some of the current interface encryption components and found that they had stopped updating 3.4 years ago, and did not accept PR or reply to issues. They were also simple and complex to use, so they developed a new set of components.
 
-The author does not know much about the various requirements of interface encryption. If there are functions missing in use, please come to [Github] submit `issue` or `pr` ❤。
+The author does not know much about the various requirements of interface encryption. If there are functions missing in use, please come to [Github] submit `issue` or `pr` ❤️。
+
+## Usage trends
+
+![组件maven下载量.jpg](../assets/img/组件maven下载量.jpg)
 
 [Github]: https://github.com/BubblingXuYijie/secure-api-spring-boot
