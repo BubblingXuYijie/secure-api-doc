@@ -22,7 +22,7 @@ Therefore, in view of the existence of this demand, the author also looked for s
 
 The author does not know much about the various requirements of interface encryption. If there are functions missing in use, please come to [Github] submit `issue` or `pr` ❤️。
 
-## Usage trends
+## Usage increment trends
 
 ![组件maven下载量.jpg](../assets/img/组件maven下载量.jpg)
 
