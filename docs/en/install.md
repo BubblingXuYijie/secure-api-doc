@@ -16,7 +16,7 @@
     <groupId>icu.xuyijie</groupId>
     <artifactId>secure-api-spring-boot-starter</artifactId>
     <!--spring boot 2 please import the 2.x version-->
-    <version>2.0.6</version>
+    <version>2.0.7</version>
 </dependency>
 ```
 @tab:active spring boot 3
@@ -26,7 +26,7 @@
     <groupId>icu.xuyijie</groupId>
     <artifactId>secure-api-spring-boot-starter</artifactId>
     <!--spring boot 3 please import the 3.x version-->
-    <version>3.0.0</version>
+    <version>3.0.1</version>
 </dependency>
 ```
 :::
@@ -37,11 +37,11 @@
 @tab:active spring boot 2
 ```gradle
 // spring boot 2 please import the 2.x version
-implementation 'icu.xuyijie:secure-api-spring-boot-starter:2.0.6'
+implementation 'icu.xuyijie:secure-api-spring-boot-starter:2.0.7'
 ```
 @tab:active spring boot 3
 ```gradle
 // spring boot 3 please import the 3.x version
-implementation 'icu.xuyijie:secure-api-spring-boot-starter:3.0.0'
+implementation 'icu.xuyijie:secure-api-spring-boot-starter:3.0.1'
 ```
 :::
