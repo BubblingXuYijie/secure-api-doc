@@ -35,20 +35,31 @@ export default defineUserConfig({
         navbar: ['/', '/开始使用', '/版本历史'],
         sidebar: [
           {
-            text: '开始使用',
+            text: '快速开始',
             prefix: '/',
-            link: '/开始使用.md',
+            children: [
+              {
+                text: '开始使用',
+                link: '/开始使用.md',
+              },
+              '安装',
+              '配置',
+              '试一下',
+            ]
           },
-          '安装',
-          '配置',
-          '试一下',
-          '注解',
-          'URL匹配',
-          '异常处理',
-          '加密算法',
-          'CipherUtils',
-          'DiffieHellman密钥协商',
-          '前后端配合流程',
+          {
+            text: '指南',
+            prefix: '/',
+            children: [
+              '注解',
+              'URL匹配',
+              '异常处理',
+              '加密算法',
+              'CipherUtils',
+              '两种模式',
+              'DH密钥协商',
+            ]
+          },
         ],
       },
       '/en/': {
@@ -60,18 +71,8 @@ export default defineUserConfig({
             text: 'Start',
             prefix: '/en/',
             link: '/en/get-started.md',
-            // children: [
-            //   {
-            //     text: 'github',
-            //     link: 'https://github.com',
-            //     children: [],
-            //   },
-            // ],
           },
-          {
-            text: 'Install',
-            link: '/en/install.md',
-          },
+          '/en/install.md',
           '/en/configuration.md',
           '/en/try-it.md',
           '/en/annotation.md',
@@ -79,8 +80,8 @@ export default defineUserConfig({
           '/en/exception-handle.md',
           '/en/encryption-algorithm',
           '/en/CipherUtils',
-          '/en/diffie-hellman-key-agreement',
-          '/en/front-and-back-end-cooperation-process',
+          '/en/two-modes',
+          '/en/DH-key-agreement',
         ],
       },
     },

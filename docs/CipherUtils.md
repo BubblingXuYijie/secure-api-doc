@@ -2,11 +2,11 @@
 
 ## 介绍
 
-> `CipherUtils` 是 SecureApi 提供的加解密工具类，你可以在代码中使用它，来达到更个性化的加解密方式
+`CipherUtils` 是 SecureApi 提供的加解密工具类，你可以在代码中使用它，来达到更个性化的加解密方式
 
 ## 开始
 
-> 初始化CipherUtils，参数你想使用的加密算法
+初始化CipherUtils，参数你想使用的加密算法
 
 > 你可以采用单例模式等初始化一次全局使用
 
@@ -14,6 +14,7 @@
 
 ```java
 CipherUtils cipherUtils = new CipherUtils(CipherAlgorithmEnum.AES_CBC_PKCS5);
+// CipherUtils cipherUtils = new CipherUtils(CipherAlgorithmEnum.RSA_ECB_SHA256);
 ```
 
 ## 对称算法
@@ -45,7 +46,7 @@ String decryptString = cipherUtils.decrypt(encryptString, key, iv);
 
 ```java
 // 生成密钥对，RSA非对称加密只有ECB模式，所以不需要偏移量
-RsaKeyPair rsaKeyPair = cipherUtils.getRsaKeyPair();
+RsaKeyPair rsaKeyPair = cipherUtils.getRandomRsaKeyPair();
 // 用于加密
 String publicKey = rsaKeyPair.getPublicKey();
 // 用于解密

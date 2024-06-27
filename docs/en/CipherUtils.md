@@ -2,11 +2,11 @@
 
 ## Introduce
 
-> `CipherUtils` is an encryption and decryption tool class provided by SecureApi. You can use it in your code to achieve more personalized encryption and decryption methods
+`CipherUtils` is an encryption and decryption tool class provided by SecureApi. You can use it in your code to achieve more personalized encryption and decryption methods
 
 ## Start
 
-> Initialize CipherUtils with the encryption algorithm you want to use
+Initialize CipherUtils with the encryption algorithm you want to use
 
 > You can use singleton mode to initialize a global use
 
@@ -14,6 +14,7 @@
 
 ```java
 CipherUtils cipherUtils = new CipherUtils(CipherAlgorithmEnum.AES_CBC_PKCS5);
+// CipherUtils cipherUtils = new CipherUtils(CipherAlgorithmEnum.RSA_ECB_SHA256);
 ```
 
 ## Symmetric algorithm
@@ -45,7 +46,7 @@ String decryptString = cipherUtils.decrypt(encryptString, key, iv);
 
 ```java
 // Generate key pairs, RSA asymmetric encryption only has ECB mode, so no offsets are required
-RsaKeyPair rsaKeyPair = cipherUtils.getRsaKeyPair();
+RsaKeyPair rsaKeyPair = cipherUtils.getRandomRsaKeyPair();
 // For encrypt
 String publicKey = rsaKeyPair.getPublicKey();
 // For decrypt

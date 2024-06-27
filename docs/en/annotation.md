@@ -1,6 +1,6 @@
 # Annotation
 
-> The component has a total of 3 annotations: `@EncryptApi` `@DecryptApi` `@DecryptParam`，If URL matching is configured, then the matching interface can be encrypted and decrypted without using the following annotations.
+The component has a total of 3 annotations: `@EncryptApi` `@DecryptApi` `@DecryptParam`，If URL matching is configured, then the matching interface can be encrypted and decrypted without using the following annotations.
 
 ::: warning
 *Please be very careful！！！*, Do not use @RequestParam for parameters that need to be decrypted, which will cause the decryption function to fail (even if the URL match is configured). @DecryptParam provides the same capabilities as @RequestParam, just use @DecryptParam.

@@ -1,7 +1,7 @@
 # Configuration
 
-> There are two configuration methods, `yml` and `Bean`, depending on which one you prefer. If it requires higher
-> security, it is recommended to use the `Bean` method to dynamically set the key, rather than writing it in `yml`.
+There are two configuration methods, `yml` and `Bean`, depending on which one you prefer. If it requires higher
+security, it is recommended to use the `Bean` method to dynamically set the key, rather than writing it in `yml`.
 
 ## yml mode
 
