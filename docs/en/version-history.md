@@ -1,8 +1,12 @@
 # Version History
 
+## :) 3.0.0
+
+Support stable versions of spring boot 3 and above!!!
+
 ## :) 2.0.6
 
-The first stable version with no problems with each function!!!
+The first stable version with no problems with each function!!! Support spring boot 2
 
 ## ❌ 2.0.5（Deprecated）
 
