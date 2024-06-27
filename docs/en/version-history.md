@@ -1,5 +1,7 @@
 # Version History
 
+The current 2.x and 3.x versions will be sync up and updated, with the same functions. Maybe 2.x will be stopped later, after all, it will be 2024.
+
 ## :) 3.0.0
 
 Support stable versions of spring boot 3 and above!!!
