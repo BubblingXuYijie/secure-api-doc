@@ -57,7 +57,7 @@ public static void main(String[] args) {
 }
 ```
 
-![img.png](assets/img/DH密钥协商工具类示例输出.png)
+![运行结果](assets/img/DH密钥协商工具类示例输出.png)
 
 ## 说明
 

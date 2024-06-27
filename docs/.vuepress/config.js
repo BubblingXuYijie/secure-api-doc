@@ -1,6 +1,7 @@
 import { defaultTheme } from '@vuepress/theme-default'
 import { defineUserConfig } from 'vuepress/cli'
 import { viteBundler } from '@vuepress/bundler-vite'
+import { mdEnhancePlugin } from "vuepress-plugin-md-enhance";
 
 export default defineUserConfig({
   head: [['link', { rel: 'icon', href: 'https://qiniuoss.xuyijie.icu/SecureApiDoc/img/logo/favicon.png' }]],
@@ -9,6 +10,20 @@ export default defineUserConfig({
   description: '',
   // 部署github page时这里要和page的路径匹配
   base: '/secure-api-doc',
+  plugins: [
+    mdEnhancePlugin({
+      // 选项卡
+      tabs: true,
+      // 启用图片 figure
+      figure: true,
+      // 启用图片懒加载
+      imgLazyload: true,
+      // 启用图片标记
+      imgMark: true,
+      // 启用图片大小
+      imgSize: true,
+    }),
+  ],
   locales: {
     // 键名是该语言所属的子路径
     // 作为特例，默认语言可以使用 '/' 作为其路径。
@@ -60,6 +75,7 @@ export default defineUserConfig({
               'DH密钥协商',
             ]
           },
+          '黑金刚',
         ],
       },
       '/en/': {
@@ -72,16 +88,23 @@ export default defineUserConfig({
             prefix: '/en/',
             link: '/en/get-started.md',
           },
-          '/en/install.md',
-          '/en/configuration.md',
-          '/en/try-it.md',
-          '/en/annotation.md',
-          '/en/url-pattern.md',
-          '/en/exception-handle.md',
-          '/en/encryption-algorithm',
-          '/en/CipherUtils',
-          '/en/two-modes',
-          '/en/DH-key-agreement',
+          {
+            text: 'Guide',
+            prefix: '/en/',
+            children: [
+              'install.md',
+              'configuration.md',
+              'try-it.md',
+              'annotation.md',
+              'url-pattern.md',
+              'exception-handle.md',
+              'encryption-algorithm',
+              'CipherUtils',
+              'two-modes',
+              'DH-key-agreement',
+            ]
+          },
+          '/en/black-king-kong',
         ],
       },
     },

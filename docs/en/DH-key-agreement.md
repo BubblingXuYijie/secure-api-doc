@@ -52,7 +52,7 @@ public static void main(String[] args) {
 }
 ```
 
-![img.png](../assets/img/DH密钥协商工具类示例输出.png)
+![output result](../assets/img/DH密钥协商工具类示例输出.png)
 
 ## Explain
 
