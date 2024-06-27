@@ -9,7 +9,7 @@ export default defineUserConfig({
   title: 'SecureApi使用文档',
   description: '',
   // 部署github page时这里要和page的路径匹配
-  base: '/secure-api-doc',
+  base: '/secure-api-doc/',
   plugins: [
     mdEnhancePlugin({
       // 选项卡
