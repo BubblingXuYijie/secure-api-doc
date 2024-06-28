@@ -6,7 +6,7 @@ In the encryption modes introduced in the previous chapter, there are `common` a
 
 ## common mode
 
-`commom` mode, both the front and back ends need to save the same key or key pair for deciphering.
+`commom` mode, both the front and back ends need to save the same key or key pair for deciphering.(Interface encryption is not limited to the front and back ends, but can also be used to communicate between two servers. Here is an example of the front and back ends.)
 
 > Example:
 >
