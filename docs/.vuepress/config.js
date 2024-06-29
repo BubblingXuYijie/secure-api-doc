@@ -42,13 +42,31 @@ export default defineUserConfig({
   theme: defaultTheme({
     logo: 'https://qiniuoss.xuyijie.icu/SecureApiDoc/img/logo/logo.png',
     navbar: ['/', '/get-started'],
+    //repo: 'https://github.com/BubblingXuYijie/secure-api-spring-boot',
     docsRepo: 'https://github.com/BubblingXuYijie/secure-api-doc',
     docsDir: 'docs',
     locales: {
       '/': {
         selectLanguageText: 'Language',
         selectLanguageName: '简体中文',
-        navbar: ['/', '/开始使用', '/版本历史'],
+        navbar: [
+            '/',
+          '/开始使用',
+          '/版本历史',
+          {
+            text: '文档加速',
+            children: [
+              {
+                text: '中国大陆',
+                link: 'https://doc.xuyijie.icu/secure-api-doc/',
+              },
+              {
+                text: '国际',
+                link: 'https://bubblingxuyijie.github.io/secure-api-doc/',
+              },
+            ],
+          },
+        ],
         sidebar: [
           {
             text: '快速开始',
@@ -85,7 +103,24 @@ export default defineUserConfig({
       '/en/': {
         selectLanguageText: '切换语言',
         selectLanguageName: 'English',
-        navbar: ['/en/', '/en/get-started', '/en/version-history'],
+        navbar: [
+            '/en/',
+          '/en/get-started',
+          '/en/version-history',
+          {
+            text: 'Doc Accelerate',
+            children: [
+              {
+                text: 'China Mainland',
+                link: 'https://doc.xuyijie.icu/secure-api-doc/',
+              },
+              {
+                text: 'International',
+                link: 'https://bubblingxuyijie.github.io/secure-api-doc/',
+              },
+            ],
+          },
+        ],
         sidebar: [
           {
             text: 'Start',
@@ -113,7 +148,6 @@ export default defineUserConfig({
         editLinkText: 'Edit on GitHub',
       },
     },
-    repo: 'https://github.com/BubblingXuYijie/secure-api-spring-boot',
   }),
 
   bundler: viteBundler(),
