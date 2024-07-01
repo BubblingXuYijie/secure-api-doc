@@ -94,6 +94,7 @@ export default defineUserConfig({
               'DH密钥协商',
             ]
           },
+          'JS示例',
           '黑金刚',
         ],
         editLinkText: '在 Github 上编辑',
@@ -143,6 +144,7 @@ export default defineUserConfig({
               'DH-key-agreement',
             ]
           },
+          '/en/js-demo',
           '/en/black-king-kong',
         ],
         editLinkText: 'Edit on GitHub',

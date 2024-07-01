@@ -11,6 +11,8 @@ security, it is recommended to use the `Bean` method to dynamically set the key,
 secure-api:
   # Enable the SecureApi function, if false, the rest of the configuration items will not take effect
   enabled: true
+  # Whether the generated key and ciphertext comply with the URL specification
+  url-safe: true
   # Turn on encryption and decryption log printing, and information such as interface name, encryption mode, algorithm, plaintext and ciphertext will be printed
   show-log: true
   # Encryption mode, common and session_key optional, session_key is session key mode, used for each request to use a different key, requires front-end cooperation
@@ -67,6 +69,7 @@ public class SecureApiConfig {
     public SecureApiPropertiesConfig secureApiPropertiesConfig() {
         SecureApiPropertiesConfig secureApiPropertiesConfig = new SecureApiPropertiesConfig();
         secureApiPropertiesConfig.setEnabled(true);
+        secureApiPropertiesConfig.setUrlSafe(true);
         secureApiPropertiesConfig.setShowLog(true);
         secureApiPropertiesConfig.setMode(SecureApiProperties.Mode.COMMON);
         secureApiPropertiesConfig.setCipherAlgorithmEnum(CipherAlgorithmEnum.RSA_ECB_SHA256);
