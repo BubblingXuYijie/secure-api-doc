@@ -2,6 +2,18 @@
 
 > The current 2.x (spring boot 2) and 3.x (spring boot 3) versions will be sync up and updated, with the same functions. Maybe 2.x will be stopped later, after all, it will be 2024.
 
+## :) 3.0.2
+
+feature:
+
+- Add the configuration item: url-safe to determine whether the generated key and ciphertext comply with the url specification, so that you can transfer it in the url address
+
+## :) 2.0.8
+
+feature:
+
+- Add the configuration item: url-safe to determine whether the generated key and ciphertext comply with the url specification, so that you can transfer it in the url address
+
 ## :) 3.0.1
 
 feature:
