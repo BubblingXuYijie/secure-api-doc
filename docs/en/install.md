@@ -2,7 +2,7 @@
 
 ## Environmental requirements
 
-- jdk 8+
+- jdk 8+ (Please use `jdk17` + for `spring boot 3`)
 - Maven/Gradle
 - spring boot 2+（`spring boot 3` please import the `3.0.0+` version of SecureApi）
 
