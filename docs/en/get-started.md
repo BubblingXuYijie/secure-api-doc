@@ -24,6 +24,8 @@ The author does not know much about the various requirements of interface encryp
 
 ## Usage increment trends
 
+It's been a year or two since this component was released, and it took so many users to reorganize the naming, repository, and documentation.
+
 ![maven downloads of this component.jpg](../assets/img/组件maven下载量.jpg)
 
 [Github]: https://github.com/BubblingXuYijie/secure-api-spring-boot
