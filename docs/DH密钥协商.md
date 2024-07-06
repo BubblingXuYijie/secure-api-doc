@@ -8,7 +8,7 @@
 
 ## 协商流程
 
-使用DH密钥协商需要后端使用 SecureApi 设置加密模式为 `common`，指定加密算法为 `AES`，不能是其他算法，因为 DH
+使用 DH 密钥协商需要后端使用 SecureApi 设置加密模式为 `common`，指定加密算法为 `AES`，不能是其他算法，因为 DH
 协商出来的密钥是 `AES` 的密钥
 
 > - 后端使用 `CipherUtils` 或者在线网站生成 `RSA` 密钥对保存在服务器，等待前端协商信号
@@ -61,4 +61,4 @@ public static void main(String[] args) {
 
 ## 说明
 
-DH密钥协商本质是还是前后端各自保存一份密钥，只是增强了灵活性，SecureApi 还是使用 `common` 模式，配置 SecureApi 的时候把协商后的密钥设置到  `SecureApiPropertiesConfig` 的 `key` 字段就可以了。
+DH 密钥协商本质是还是前后端各自保存一份密钥，只是增强了灵活性，SecureApi 还是使用 `common` 模式，配置 SecureApi 的时候把协商后的密钥设置到  `SecureApiPropertiesConfig` 的 `key` 字段就可以了。
