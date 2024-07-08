@@ -10,7 +10,7 @@
 
 > 你可以采用单例模式等初始化一次全局使用
 
-> 注意，如果你将它注册为Bean请不要取名 cipherUtils ，SecureApi 内部已经注册了一个名为 cipherUtils 的 Bean ，会导致冲突，当然你也可以直接注入 SecureApi 提供的 cipherUtils ，但不要在SecureApi的配置文件中注入，此时cipherUtils还未初始化完成，注入的 `cipherUtils` 加密算法和 SecureApi 配置的加密算法相同
+> 注意，如果你将它注册为Bean请不要取名 cipherUtils ，SecureApi 内部已经注册了一个名为 cipherUtils 的 Bean ，会导致冲突，当然你也可以直接注入 SecureApi 提供的 cipherUtils ，但不要在 SecureApi 的配置文件中注入，此时 cipherUtils 还未初始化完成，注入的 `cipherUtils` 加密算法和 SecureApi 配置的加密算法相同
 
 ```java
 CipherUtils cipherUtils = new CipherUtils(CipherAlgorithmEnum.AES_CBC_PKCS5);
