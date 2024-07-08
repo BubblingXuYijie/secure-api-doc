@@ -14,7 +14,7 @@ public class GlobalExceptionHandler {
      *
      * @param request request information
      * @param e       SecureApiException
-     * @return Customize the return body, and the return result can also be encrypted here
+     * @return Customize the return body, and the return result can also be encrypted here, if the url is configured to match /**, the return value will also be encrypted without comments
      */
     @ExceptionHandler(value = SecureApiException.class)
     //@EncryptApi

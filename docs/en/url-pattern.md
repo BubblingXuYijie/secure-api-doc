@@ -11,7 +11,7 @@ The URL path follows the regular rules of the spring boot interceptor. If left b
 
 1.The priority of the annotation is higher than that of the URL match. Even if the interface is not matched, the interface, parameters, and fields specified by the annotation will be encrypted and decrypted.
 
-2.For the interface to which the decrypted URL matches, all parameters and fields of the interface will be decrypted, unless the `@RequestParam` annotation is used on the interface parameter.
+2.For the interface to which the decrypted URL matches, all parameters and fields of the interface will be decrypted, unless the parameter annotation of spring boot such as `@RequestParam` is used on the interface parameter.
 :::
 
 [Configuration]: configuration

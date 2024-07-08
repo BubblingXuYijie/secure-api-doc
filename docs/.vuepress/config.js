@@ -95,6 +95,7 @@ export default defineUserConfig({
             ]
           },
           'JS示例',
+          '微服务调用',
           '黑金刚',
         ],
         editLinkText: '在 Github 上编辑',
@@ -145,6 +146,7 @@ export default defineUserConfig({
             ]
           },
           '/en/js-demo',
+          '/en/microservice-invocation',
           '/en/black-king-kong',
         ],
         editLinkText: 'Edit on GitHub',
