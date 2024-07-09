@@ -2,6 +2,18 @@
 
 > The current 2.x (spring boot 2) and 3.x (spring boot 3) versions will be sync up and updated, with the same functions. Maybe 2.x will be stopped later, after all, it will be 2024.
 
+## :) 3.0.3
+
+fix：
+
+- @DecryptParam annotation parsed List is immutable array caused by add and other method exceptions
+
+## :) 2.1.0
+
+fix：
+
+- @DecryptParam annotation parsed List is immutable array caused by add and other method exceptions
+
 ## :) 2.0.9
 
 fix：

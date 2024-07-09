@@ -11,7 +11,7 @@ security, it is recommended to use the `Bean` method to dynamically set the key,
 secure-api:
   # Enable the SecureApi function, if false, the rest of the configuration items will not take effect
   enabled: true
-  # Whether the generated key and ciphertext comply with the URL specification
+  # Whether the generated key and ciphertext comply with the URL specification, enable by default, if enabled, when cooperating with the front end, the front end has to handle the url safe conversion of the ciphertext by itself. In the "Js Demo", there are code examples in the article
   url-safe: true
   # Turn on encryption and decryption log printing, and information such as interface name, encryption mode, algorithm, plaintext and ciphertext will be printed
   show-log: true
@@ -69,6 +69,7 @@ public class SecureApiConfig {
     public SecureApiPropertiesConfig secureApiPropertiesConfig() {
         SecureApiPropertiesConfig secureApiPropertiesConfig = new SecureApiPropertiesConfig();
         secureApiPropertiesConfig.setEnabled(true);
+        // The generated key and ciphertext are in line with the url specification, enable by default, if enable, when cooperating with the front end, the front end has to handle the url safe conversion of the ciphertext by itself. There are code examples in the "JS Demo" article
         secureApiPropertiesConfig.setUrlSafe(true);
         secureApiPropertiesConfig.setShowLog(true);
         secureApiPropertiesConfig.setMode(SecureApiProperties.Mode.COMMON);
