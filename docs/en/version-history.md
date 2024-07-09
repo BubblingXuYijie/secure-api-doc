@@ -2,6 +2,18 @@
 
 > The current 2.x (spring boot 2) and 3.x (spring boot 3) versions will be sync up and updated, with the same functions. Maybe 2.x will be stopped later, after all, it will be 2024.
 
+## :) 3.0.4
+
+fix：
+
+- Fix the issue that the encryption algorithm and session key algorithm enumeration class configuration in the yml configuration file do not take effect
+
+## :) 2.1.1
+
+fix：
+
+- Fix the issue that the encryption algorithm and session key algorithm enumeration class configuration in the yml configuration file do not take effect
+
 ## :) 3.0.3
 
 fix：
