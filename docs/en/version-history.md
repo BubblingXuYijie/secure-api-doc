@@ -10,7 +10,7 @@ feature：
 
 fix：
 
-- Exception when there is a final field in an entity class parameter
+- The entity class receives the param/formData parameter for decipher. When the final field or basic type is passed with a field value of null, the field value of the entity class is empty
 
 ## :) 2.1.2
 
@@ -20,7 +20,7 @@ feature：
 
 fix：
 
-- Exception when there is a final field in an entity class parameter
+- The entity class receives the param/formData parameter for decipher. When the final field or basic type is passed with a field value of null, the field value of the entity class is empty
 
 ## :) 3.0.4
 
