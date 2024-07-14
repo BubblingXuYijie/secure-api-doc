@@ -6,7 +6,7 @@
 
 feature：
 
-- If the encryption function is turned off in the configuration file, the @DecryptParam annotation also loses the parameter processing function. Please pay attention to modifying the annotation if necessary
+- From this version onwards, if the encryption function is turned off in the configuration file, the @DecryptParam annotation also loses the parameter processing function, which means that adding this annotation is the same as not adding it
 - Add param/formData parameter to decipher log printing
 
 fix：
@@ -17,7 +17,7 @@ fix：
 
 feature：
 
-- If the encryption function is turned off in the configuration file, the @DecryptParam annotation also loses the parameter processing function. Please pay attention to modifying the annotation if necessary
+- From this version onwards, if the encryption function is turned off in the configuration file, the @DecryptParam annotation also loses the parameter processing function, which means that adding this annotation is the same as not adding it
 - Add param/formData parameter to decipher log printing
 
 fix：
