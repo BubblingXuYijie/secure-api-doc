@@ -22,9 +22,9 @@ secure-api:
   # session_key mode configuration item, the session key type negotiated with the front end, this configuration does not take effect in common mode
   session-key-cipher-algorithm: aes_ecb_pkcs5
   # Base64 format, Symmetric algorithm is used to encrypt and decrypt the key. When the cipher-algorithm selects the symmetric encryption algorithm, it can also be empty, and the component will randomly generate one
-  key: 5syQuHi5SMNekrADx5LEbFjEr0C0a9GigIVgDr3oT_c=
+  key:
   # Base64 format, The offset of the symmetric algorithm used for encryption and decryption. When the cipher-algorithm selects the symmetric encryption algorithm, it can also be empty, and the component will randomly generate one
-  iv: dUwxaVVQZE5md1hpZ0o1Yw==
+  iv:
   # Base64 format, The asymmetric algorithm is used to encrypt the public key. When the cipher-algorithm selects the RSA asymmetric encryption algorithm, it can also be empty. The component will randomly generate a pair
   public-key:
   # Base64 format, The asymmetric algorithm is used to encrypt the private key. When the cipher-algorithm selects the RSA asymmetric encryption algorithm, it can also be empty. The component will randomly generate a pair
