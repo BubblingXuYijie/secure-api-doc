@@ -21,13 +21,13 @@ secure-api:
   cipher-algorithm: rsa_ecb_sha256
   # session_key mode configuration item, the session key type negotiated with the front end, this configuration does not take effect in common mode
   session-key-cipher-algorithm: aes_ecb_pkcs5
-  # Symmetric algorithm is used to encrypt and decrypt the key. When the cipher-algorithm selects the symmetric encryption algorithm, it can also be empty, and the component will randomly generate one
+  # Base64 format, Symmetric algorithm is used to encrypt and decrypt the key. When the cipher-algorithm selects the symmetric encryption algorithm, it can also be empty, and the component will randomly generate one
   key:
-  # The offset of the symmetric algorithm used for encryption and decryption. When the cipher-algorithm selects the symmetric encryption algorithm, it can also be empty, and the component will randomly generate one
+  # Base64 format, The offset of the symmetric algorithm used for encryption and decryption. When the cipher-algorithm selects the symmetric encryption algorithm, it can also be empty, and the component will randomly generate one
   iv:
-  # The asymmetric algorithm is used to encrypt the public key. When the cipher-algorithm selects the asymmetric encryption algorithm, it can also be empty. The component will randomly generate a pair
+  # Base64 format, The asymmetric algorithm is used to encrypt the public key. When the cipher-algorithm selects the RSA asymmetric encryption algorithm, it can also be empty. The component will randomly generate a pair
   public-key:
-  # The asymmetric algorithm is used to encrypt the private key. When the cipher-algorithm selects the asymmetric encryption algorithm, it can also be empty. The component will randomly generate a pair
+  # Base64 format, The asymmetric algorithm is used to encrypt the private key. When the cipher-algorithm selects the RSA asymmetric encryption algorithm, it can also be empty. The component will randomly generate a pair
   private-key:
   # The interface path matching that needs to be encrypted follows the regular rules of the spring boot interceptor. If left blank or not configured, it means that url matching is not used, and only the annotated interface is decrypted
   encrypt-url:
