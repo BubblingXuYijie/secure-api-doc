@@ -82,9 +82,11 @@ public class SecureKeyInterceptor implements HandlerInterceptor {
     @Override
     public boolean preHandle(HttpServletRequest request, @NonNull HttpServletResponse response, @NonNull Object handler) {
         // Here you only need to modify the key value of the secureApiPropertiesConfig in the interception, and the subsequent operations are all done automatically by SecureApi
-        String sessionKey = request.getHeader("sessionKey");
-        log.info("session key transmitted from the front: {}", sessionKey);
-        secureApiPropertiesConfig.setKey(sessionKey);
+        if (secureApiPropertiesConfig.getMode().equals(SecureApiProperties.Mode.SESSION_KEY)) {
+            String sessionKey = request.getHeader("sessionKey");
+            log.info("session key transmitted from the front: {}", sessionKey);
+            secureApiPropertiesConfig.setKey(sessionKey);
+        }
         return true;
     }
 }
