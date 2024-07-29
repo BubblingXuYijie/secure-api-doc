@@ -2,6 +2,18 @@
 
 > The current 2.x (spring boot 2) and 3.x (spring boot 3) versions will be sync up and updated, with the same functions. Maybe 2.x will be stopped later, after all, it will be 2024.
 
+## :) 3.0.7
+
+fix：
+
+- The Missing Field Value of Entity Class Parameters in Param Form
+
+## :) 2.1.4
+
+fix：
+
+- The Missing Field Value of Entity Class Parameters in Param Form
+
 ## :) 3.0.6
 
 feature：
