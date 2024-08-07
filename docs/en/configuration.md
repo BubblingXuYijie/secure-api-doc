@@ -41,6 +41,14 @@ secure-api:
     include-urls: /**
     # Annotations take precedence over this even if exclusions are configured
     exclude-urls:
+  # Date format
+  date-format: yyyy-MM-dd HH:mm:ss
+  # LocalDateTime format
+  local-date-time-format: yyyy-MM-dd HH:mm:ss
+  # LocalDate format
+  local-date-format: yyyy-MM-dd
+  # LocalTime format
+  local-time-format: HH:mm:ss
 ```
 
 ## Bean mode
