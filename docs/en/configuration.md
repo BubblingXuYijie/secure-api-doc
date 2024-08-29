@@ -34,7 +34,7 @@ secure-api:
     # If this item is configured, the return value will be encrypted with or without annotations on the interface
     include-urls: /**
     # Annotations take precedence over this even if exclusions are configured
-    exclude-urls:
+    exclude-urls: /test1,/test2
   # The interface path matching that needs to be decrypted follows the regular rules of the spring boot interceptor. Leaving blank or not configuring means that url matching is not used, and only the interfaces, parameters, and fields of the annotation are decrypted
   decrypt-url:
     # If this item is configured, the interface, parameters, and fields will be decrypted with or without annotations
