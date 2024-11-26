@@ -22,7 +22,6 @@ feature：
 - Better deserialization of List strings
 - Param parameter decryption uses asynchronous orchestration to improve performance
 - Add test HTTP file
-- Upgrade spring boot to 3.3.6
 
 fix：
 
