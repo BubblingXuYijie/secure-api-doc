@@ -26,6 +26,10 @@ The "interfaces" mentioned below are all methods marked by @RestController, not 
 *Remind again!!! Please be very careful!!!*, Do not use @RequestParam for parameters that need to be decrypted, which will cause the decryption function to fail (even if the URL match is configured). @DecryptParam provides the same capabilities as @RequestParam, just use @DecryptParam.
 :::
 
+::: warning
+MultipartFile decryption is not supported for the time being, and will be developed in the future.
+:::
+
 |                  Annotations function                  |                                  Use position                                  |          Field          |                                                                                                                                                                                                Notes                                                                                                                                                                                                |
 |:------------------------------------------------------:|:------------------------------------------------------------------------------:|:-----------------------:|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|
 | Decrypt interface param and form-data parameter values | Interface non-entity class parameter or interface entity class parameter field | Same as `@RequestParam` | The priority is higher than the URL match, even if the interface does not match, adding this annotation will decrypt the parameters; in addition, this annotation cannot be used with `@RequestParam` at the same time, which will cause the decryption function to fail. This annotation has replaced the `@RequestParam` function, and the internal field function is the same as `@RequestParam` |

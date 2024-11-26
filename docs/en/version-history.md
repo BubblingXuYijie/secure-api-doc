@@ -2,6 +2,32 @@
 
 > The current 2.x (spring boot 2) and 3.x (spring boot 3) versions will be sync up and updated, with the same functions. Maybe 2.x will be stopped later, after all, it will be 2024.
 
+## :) 3.1.2
+
+feature：
+
+- Better deserialization of List strings
+- Param parameter decryption uses asynchronous orchestration to improve performance
+- Add test HTTP file
+- Upgrade spring boot to 3.3.6
+
+fix：
+
+- Handle parameter decryption of immutable array types such as String [], Long []
+
+## :) 2.1.9
+
+feature：
+
+- Better deserialization of List strings
+- Param parameter decryption uses asynchronous orchestration to improve performance
+- Add test HTTP file
+- Upgrade spring boot to 3.3.6
+
+fix：
+
+- Handle parameter decryption of immutable array types such as String [], Long []
+
 ## :) 3.1.1
 
 fix：
