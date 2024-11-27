@@ -8,6 +8,12 @@
 npm install crypto-js
 ```
 
+使用 ts 的项目还需要安装 @types/crypto-js，不然导入时会报红色
+
+```bash
+npm install @types/crypto-js
+```
+
 ## 使用
 
 ### 导入 crypto-js
@@ -35,10 +41,18 @@ console.log('加密后：' + encryptData)
 const decryptData = decrypt(encryptData, key, iv)
 console.log('解密后：' + encryptData)
 
-// 解密  data：要加密解密的数据，AES_KEY：密钥，IV:偏移量
+/**
+ * 解密数据
+ * @param data 要解密的数据（base64）
+ * @param AES_KEY 密钥（base64）
+ * @param IV 偏移量（base64）
+ * @return 解密结果（UTF8字符串）
+ */
 function decrypt(data: string, AES_KEY: string, IV: string) {
     let decrypt
+    // base64 形式的 key 和 iv 需要转换成 CryptoJS.lib.WordArray
     const key = CryptoJS.enc.Base64.parse(AES_KEY);
+    // 传入 iv 的话走 CBC 模式，否则走 ECB 模式
     if (IV) {
         const iv = CryptoJS.enc.Base64.parse(IV);
         decrypt = CryptoJS.AES.decrypt(data, key, {
@@ -55,7 +69,13 @@ function decrypt(data: string, AES_KEY: string, IV: string) {
     return decrypt.toString(CryptoJS.enc.Utf8);
 }
 
-// 加密
+/**
+ * 加密数据
+ * @param data 要加密的数据，必须是 String 类型，普通类型抓换为 String 使用 String(data)，对象使用 JSON.stringify(data)
+ * @param AES_KEY 密钥（base64）
+ * @param IV 偏移量（base64）
+ * @return 加密结果（base64）
+ */
 function encrypt(data: string, AES_KEY: string, IV: string) {
     let encrypted
     const key = CryptoJS.enc.Base64.parse(AES_KEY);
@@ -72,6 +92,7 @@ function encrypt(data: string, AES_KEY: string, IV: string) {
             padding: CryptoJS.pad.Pkcs7,
         });
     }
+    // 加密默认返回的数据格式就是 base64
     return encrypted.toString();
 }
 ```
@@ -79,7 +100,7 @@ function encrypt(data: string, AES_KEY: string, IV: string) {
 ## 注意事项
 
 ::: warning
-后端 `SecureApi` 默认配置是 url safe 形式，而 `CryptoJS` 只能生成普通 base64，所以你在前端生成的 key 、密文等都需要转换成 url safe 形式再发往后端，后端传来的 url safe 形式的 base64 你也要先还原成普通 base64 再给 `CryptoJS` 解密，当然，如果你关闭了 `SecureApi` 的 url safe 配置就不需要这些处理了
+后端 `SecureApi` 默认配置是 url safe 形式，而 `CryptoJS` 只能生成和处理普通 base64，所以你在前端生成的 key 、密文等都需要转换成 url safe 形式再发往后端，后端传来的 url safe 形式的 base64 你也要先还原成普通 base64 再给 `CryptoJS` 解密，当然，如果你关闭了 `SecureApi` 的 url safe 配置就不需要这些处理了
 :::
 
 我会提供两个js方法示例来相互转换
