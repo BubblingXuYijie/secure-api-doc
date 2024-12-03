@@ -1,4 +1,4 @@
-# BestPractice
+# Best Practice
 
 ## Vue 3
 
