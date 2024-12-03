@@ -95,6 +95,7 @@ export default defineUserConfig({
             ]
           },
           'JS示例',
+          '最佳实践',
           '微服务调用',
           '黑金刚',
         ],
@@ -146,6 +147,7 @@ export default defineUserConfig({
             ]
           },
           '/en/js-demo',
+          '/en/best-practice',
           '/en/microservice-invocation',
           '/en/black-king-kong',
         ],

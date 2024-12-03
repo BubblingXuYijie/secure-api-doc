@@ -1,0 +1,12 @@
+# BestPractice
+
+## Vue 3
+
+[Vue GitHub]
+
+## Spring boot 3
+
+[Spring boot GitHub]
+
+[Vue GitHub]:https://github.com/BubblingXuYijie/secure-api-vue-demo
+[Spring boot GitHub]:https://github.com/BubblingXuYijie/secure-api-spring-boot-demo
