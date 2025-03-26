@@ -92,6 +92,7 @@ export default defineUserConfig({
               'CipherUtils',
               '两种模式',
               'DH密钥协商',
+              '数字签名校验',
             ]
           },
           'JS示例',
@@ -144,6 +145,7 @@ export default defineUserConfig({
               'CipherUtils',
               'two-modes',
               'DH-key-agreement',
+              'digital-signature-verification',
             ]
           },
           '/en/js-demo',

@@ -2,6 +2,19 @@
 
 > The current 2.x (spring boot 2) and 3.x (spring boot 3) versions will be sync up and updated, with the same functions. Maybe 2.x will be stopped later, after all, it will be 2024.
 
+## :) 3.1.3
+
+feature：
+
+- Support interface data digital signature verification
+
+
+## :) 2.2.0
+
+feature：
+
+- Support interface data digital signature verification
+
 ## :) 3.1.2
 
 feature：

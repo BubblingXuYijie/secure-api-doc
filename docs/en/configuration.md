@@ -11,6 +11,8 @@ security, it is recommended to use the `Bean` method to dynamically set the key,
 secure-api:
   # Enable the SecureApi function, if false, the rest of the configuration items will not take effect
   enabled: true
+  # Enable interface data digital signature verification
+  sign-enabled: false
   # Whether the generated key and ciphertext comply with the URL specification, enable by default, if enabled, when cooperating with the front end, the front end has to handle the url safe conversion of the ciphertext by itself. In the "Js Demo", there are code examples in the article
   url-safe: true
   # Turn on encryption and decryption log printing, and information such as interface name, encryption mode, algorithm, plaintext and ciphertext will be printed
@@ -29,6 +31,10 @@ secure-api:
   public-key:
   # Base64 format, The asymmetric algorithm is used to encrypt the private key. When the cipher-algorithm selects the RSA asymmetric encryption algorithm, it can also be empty. The component will randomly generate a pair
   private-key:
+  # After enabling the interface digital signature verification, you can configure the RSA public key for digital signature, or leave it blank. The component will randomly generate a pair
+  sign-public-key:
+  # After enabling the interface digital signature verification, you can configure the RSA private key for digital signature, or leave it blank. The component will randomly generate a pair
+  sign-private-key:
   # The interface path matching that needs to be encrypted follows the regular rules of the spring boot interceptor. If left blank or not configured, it means that url matching is not used, and only the annotated interface is decrypted
   encrypt-url:
     # If this item is configured, the return value will be encrypted with or without annotations on the interface
@@ -90,6 +96,11 @@ public class SecureApiConfig {
         // Set the generated key pair to secureApiPropertiesConfig
         secureApiPropertiesConfig.setPublicKey(randomRsaKeyPair.getPublicKey());
         secureApiPropertiesConfig.setPrivateKey(randomRsaKeyPair.getPrivateKey());
+        
+        // Configure the digital signature verification key pair
+        RsaKeyPair randomRsaKeyPair2 = cipherUtils.getRandomRsaKeyPair("2");
+        secureApiPropertiesConfig.setSignPublicKey(randomRsaKeyPair2.getPublicKey());
+        secureApiPropertiesConfig.setSignPrivateKey(randomRsaKeyPair2.getPrivateKey());
         
         // You don't need to use the URL matching function to delete the following two lines, or pass in an empty array
         // secureApiPropertiesConfig.setEncryptUrl(new SecureApiProperties.UrlPattern(Arrays.asList("/**"), new ArrayList<>()));
