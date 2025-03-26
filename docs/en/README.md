@@ -17,7 +17,7 @@ features:
   - title: Scene Launcher Design
     details: Perfect combination of spring boot, support for 2 and 3, fully automated, flexible configuration, support for yml and bean methods.
   - title: Built-in multiple encryption algorithms
-    details: Support AES, SM4, RSA and other encryption methods, and support DH front-end and back-end key negotiation methods.
+    details: Support AES, SM4, RSA and other encryption methods, and support DH front-end and back-end key negotiation methods.Support digital signature verification.
 
 footer: Apache License 2.0
 ---

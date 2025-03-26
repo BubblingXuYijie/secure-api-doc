@@ -12,7 +12,7 @@ SecureApi is an interface parameter and return value encryption and decryption t
 
 Spring boot scene launcher design (supports spring boot2 and 3), fully automated, supports param, body parameters (path parameters are not supported for the time being), and users do not need to care about encryption, decryption and key matching processes.
 
-Flexible configuration, the configuration file supports yml and bean methods, supports annotation, URL regularization for interface matching, supports AES, SM4, RSA and other encryption methods, and supports DH front-end and back-end key negotiation methods.
+Flexible configuration, the configuration file supports yml and bean methods, supports annotation, URL regularization for interface matching, supports AES, SM4, RSA and other encryption methods, and supports DH front-end and back-end key negotiation methods.Support digital signature verification.
 
 ## Development background
 
