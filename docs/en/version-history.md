@@ -2,26 +2,51 @@
 
 > The current 2.x (spring boot 2) and 3.x (spring boot 3) versions will be sync up and updated, with the same functions. Maybe 2.x will be stopped later, after all, it will be 2024.
 
+## :) 3.1.5
+
+feature：
+
+- Increase the ignore and decrypt annotations
+
+fix：
+
+- We fixed the problem of URL matching failure caused by asynchronous scheduling, and URL matching now works for entity class fields in the form of a form
+
+## :) 2.2.2
+
+feature：
+
+- Increase the ignore and decrypt annotations
+
+fix：
+
+- We fixed the problem of URL matching failure caused by asynchronous scheduling, and URL matching now works for entity class fields in the form of a form
+
 ## :) 3.1.4
 
 feature：
 
-- Fix the error when the parameter analyzer parses the JSON of a map
 - We will no longer check if the parameters in the request header are empty. If they are, we will directly throw an exception indicating a validation failure
 - Add an X-signature in the example
 - Adjust the granularity of ObjectMapper configuration, and try not to override the original default configuration as much as much as possible
 - When processing front-end requestBody, it is defaulted to handle it according to the UTF8 character set
 
+fix：
+
+- Fix the error when the parameter analyzer parses the JSON of a map
 
 ## :) 2.2.1
 
 feature：
 
-- Fix the error when the parameter analyzer parses the JSON of a map
 - We will no longer check if the parameters in the request header are empty. If they are, we will directly throw an exception indicating a validation failure
 - Add an X-signature in the example
 - Adjust the granularity of ObjectMapper configuration, and try not to override the original default configuration as much as much as possible
 - When processing front-end requestBody, it is defaulted to handle it according to the UTF8 character set
+
+fix：
+
+- Fix the error when the parameter analyzer parses the JSON of a map
 
 ## :) 3.1.3
 
