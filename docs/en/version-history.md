@@ -2,9 +2,27 @@
 
 > The current 2.x (spring boot 2) and 3.x (spring boot 3) versions will be sync up and updated, with the same functions. Maybe 2.x will be stopped later, after all, it will be 2024.
 
+## :) 3.1.6
+
+feature: 
+
+- Users can configure the field names of the stored data in the return body. After configuration, the return value no longer encrypts the entire return body but encrypts the data of the configured field names
+- The return value automatically adds the digital signature X-signature of the data in the response header
+- Upgrade the versions of spring boot and sm4 encryption libraries
+
+
+## :) 2.2.3
+
+feature: 
+
+- Users can configure the field names of the stored data in the return body. After configuration, the return value no longer encrypts the entire return body but encrypts the data of the configured field names
+- The return value automatically adds the digital signature X-signature of the data in the response header
+- Upgrade the versions of sm4 encryption libraries
+
+
 ## :) 3.1.5
 
-feature：
+feature: 
 
 - Increase the ignore and decrypt annotations
 
@@ -14,7 +32,7 @@ fix：
 
 ## :) 2.2.2
 
-feature：
+feature: 
 
 - Increase the ignore and decrypt annotations
 
@@ -24,53 +42,53 @@ fix：
 
 ## :) 3.1.4
 
-feature：
+feature: 
 
 - We will no longer check if the parameters in the request header are empty. If they are, we will directly throw an exception indicating a validation failure
 - Add an X-signature in the example
 - Adjust the granularity of ObjectMapper configuration, and try not to override the original default configuration as much as much as possible
 - When processing front-end requestBody, it is defaulted to handle it according to the UTF8 character set
 
-fix：
+fix: 
 
 - Fix the error when the parameter analyzer parses the JSON of a map
 
 ## :) 2.2.1
 
-feature：
+feature: 
 
 - We will no longer check if the parameters in the request header are empty. If they are, we will directly throw an exception indicating a validation failure
 - Add an X-signature in the example
 - Adjust the granularity of ObjectMapper configuration, and try not to override the original default configuration as much as much as possible
 - When processing front-end requestBody, it is defaulted to handle it according to the UTF8 character set
 
-fix：
+fix: 
 
 - Fix the error when the parameter analyzer parses the JSON of a map
 
 ## :) 3.1.3
 
-feature：
+feature: 
 
 - Support interface data digital signature verification
 
 
 ## :) 2.2.0
 
-feature：
+feature: 
 
 - Support interface data digital signature verification
 
 ## :) 3.1.2
 
-feature：
+feature: 
 
 - Better deserialization of List strings
 - Param parameter decryption uses asynchronous orchestration to improve performance
 - Add test HTTP file
 - Upgrade spring boot to 3.3.6
 
-fix：
+fix: 
 
 - Handle parameter decryption of immutable array types such as String [], Long []
 

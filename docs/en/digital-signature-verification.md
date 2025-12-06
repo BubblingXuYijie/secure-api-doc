@@ -17,4 +17,11 @@ Digital signatures play a crucial role in the field of information security, and
 
 3. Back-end components will automatically verify the signature of 'X-signature' using the public key.
 
-4. The method of generating a digital signature for the data returned from the backend to the frontend is to inject `RsaSignatureUtils` in the `Controller` and call the `rsaSignatureUtils.sign(byte[] data)` method.
+4. When the back-end returns data to the front-end, it will automatically add a response header `X-signature`, including the signature of the return value (remember to allow this response header in the code or nginx when crossing domains).
+
+Of course, classes for generating signatures for data are also provided. You can use: Inject `rsaSignatureUtils` and call the `rsaSignatureutils.sign(byte[] data)` method to generate a signature for the data. `rsaSignatureUtils.verify(byte[] data, String signature)` can verify data
+
+
+
+
+

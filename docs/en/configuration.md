@@ -35,6 +35,8 @@ secure-api:
   sign-public-key:
   # After enabling the interface digital signature verification, you can configure the RSA private key for digital signature, or leave it blank. The component will randomly generate a pair
   sign-private-key:
+  # The String type uniformly returns the names of the data fields that need to be encrypted in the return body. After configuration, the return value only encrypts the specified fields in the custom return body, for example, if configured as data
+  response-body-data-field:
   # The interface path matching that needs to be encrypted follows the regular rules of the spring boot interceptor. If left blank or not configured, it means that url matching is not used, and only the annotated interface is decrypted
   encrypt-url:
     # If this item is configured, the return value will be encrypted with or without annotations on the interface
