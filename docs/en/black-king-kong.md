@@ -4,8 +4,9 @@ SecureApi adopts the Apache-2.0 open-source protocol, and the components themsel
 
 [Use PayPal]
 
-![支付宝收款码.png](../assets/img/支付宝收款码.png =240x240)
-![微信收款码.png](../assets/img/微信收款码.png =240x240)
-![欧易收款码.png](../assets/img/欧易收款码.png =240x240)
+<img src="../assets/img/支付宝收款码.png" style="zoom: 25%;">
+<img src="../assets/img/微信收款码.png" style="zoom: 25%;">
+<img src="../assets/img/欧易收款码.png" style="zoom: 25%;">
+
 
 [Use PayPal]: https://www.paypal.me/XuYijie1216
